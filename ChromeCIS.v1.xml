@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+  <key>PayloadType</key>
+  <string>Configuration</string>
+
+  <key>PayloadVersion</key>
+  <integer>1</integer>
+
+  <key>PayloadIdentifier</key>
+  <string>com.blme.chrome.cis.v01</string>
+
+  <key>PayloadUUID</key>
+  <string>AEF5F291-7B6E-4422-9EA1-6E43B35AC3C8</string>
+
+  <key>PayloadDisplayName</key>
+  <string>Mac - BLME - Custom - Google Chrome - D - Security (CIS L1 Aligned) - v0.1</string>
+
+  <key>PayloadScope</key>
+  <string>System</string>
+
+  <key>PayloadContent</key>
+  <array>
+    <dict>
+      <key>PayloadType</key>
+      <string>com.apple.ManagedClient.preferences</string>
+
+      <key>PayloadVersion</key>
+      <integer>1</integer>
+
+      <key>PayloadIdentifier</key>
+      <string>com.blme.chrome.cis.v01.prefs</string>
+
+      <key>PayloadUUID</key>
+      <string>D97BF34B-87F3-4EAC-9F16-7D8EC39F798A</string>
+
+      <key>PayloadContent</key>
+      <dict>
+        <key>com.google.Chrome</key>
+        <dict>
+          <key>Forced</key>
+          <array>
+            <dict>
+              <key>mcx_preference_settings</key>
+              <dict>
+
+                <key>SafeBrowsingEnabled</key>
+                <true/>
+
+                <key>SafeBrowsingProtectionLevel</key>
+                <integer>1</integer>
+
+                <key>DownloadRestrictions</key>
+                <integer>1</integer>
+
+                <key>PasswordManagerEnabled</key>
+                <false/>
+
+                <key>AutofillAddressEnabled</key>
+                <false/>
+
+                <key>AutofillCreditCardEnabled</key>
+                <false/>
+
+                <key>AllowInsecureContent</key>
+                <false/>
+
+                <key>NetworkPredictionOptions</key>
+                <integer>2</integer>
+
+              </dict>
+            </dict>
+          </array>
+        </dict>
+      </dict>
+    </dict>
+  </array>
+
+</dict>
+</plist>
