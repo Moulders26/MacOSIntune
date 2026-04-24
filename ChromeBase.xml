@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+  <key>PayloadType</key>
+  <string>Configuration</string>
+
+  <key>PayloadVersion</key>
+  <integer>1</integer>
+
+  <key>PayloadIdentifier</key>
+  <string>com.blme.chrome.userexperience</string>
+
+  <key>PayloadUUID</key>
+  <string>7D9C6A0D-8A6C-4B67-9D39-37E8D94E74C1</string>
+
+  <key>PayloadDisplayName</key>
+  <string>Mac - BLME - Custom - Google Chrome - D - User Experience - v0.1</string>
+
+  <key>PayloadScope</key>
+  <string>System</string>
+
+  <key>PayloadContent</key>
+  <array>
+    <dict>
+      <key>PayloadType</key>
+      <string>com.apple.ManagedClient.preferences</string>
+
+      <key>PayloadVersion</key>
+      <integer>1</integer>
+
+      <key>PayloadIdentifier</key>
+      <string>com.blme.chrome.userexperience.prefs</string>
+
+      <key>PayloadUUID</key>
+      <string>91F0C5B2-4A41-4C51-BE3B-9A5F4A8C22E9</string>
+
+      <key>PayloadContent</key>
+      <dict>
+        <key>com.google.Chrome</key>
+        <dict>
+          <key>Forced</key>
+          <array>
+            <dict>
+              <key>mcx_preference_settings</key>
+              <dict>
+
+                <!-- Chrome policies go here -->
+				
+				<key>RestoreOnStartup</key>
+				<integer>1</integer>
+				<key>HomepageIsNewTabPage</key>
+				<true/>
+				<key>ShowHomeButton</key>
+				<true/>
+				<key>MetricsReportingEnabled</key>
+				<false/>
+				<key>PromotionalTabsEnabled</key>
+				<false/>
+              </dict>
+            </dict>
+          </array>
+        </dict>
+      </dict>
+    </dict>
+  </array>
+
+</dict>
+</plist>

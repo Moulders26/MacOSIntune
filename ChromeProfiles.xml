@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+  <key>PayloadType</key>
+  <string>Configuration</string>
+
+  <key>PayloadVersion</key>
+  <integer>1</integer>
+
+  <key>PayloadIdentifier</key>
+  <string>com.blme.chrome.profiles</string>
+
+  <key>PayloadUUID</key>
+  <string>2D9C6A0D-8A6C-4B67-9D78-67E8D88E77C1</string>
+
+  <key>PayloadDisplayName</key>
+  <string>Mac - BLME - Custom - Google Chrome - D - Profiles, Sign-In and Sync - v0.2</string>
+
+  <key>PayloadScope</key>
+  <string>System</string>
+
+  <key>PayloadContent</key>
+  <array>
+    <dict>
+      <key>PayloadType</key>
+      <string>com.apple.ManagedClient.preferences</string>
+
+      <key>PayloadVersion</key>
+      <integer>1</integer>
+
+      <key>PayloadIdentifier</key>
+      <string>com.blme.chrome.profiles.prefs</string>
+
+      <key>PayloadUUID</key>
+      <string>11F0C5C3-4A41-1C51-BE6B-4A5F4A8C88E9</string>
+
+      <key>PayloadContent</key>
+      <dict>
+        <key>com.google.Chrome</key>
+        <dict>
+          <key>Forced</key>
+          <array>
+            <dict>
+              <key>mcx_preference_settings</key>
+              <dict>
+				  <!-- Sign-in / identity boundary -->
+				  <key>BrowserSignin</key>
+				  <integer>0</integer>
+				  <key>SigninAllowed</key>
+				  <false/>
+				  <!-- Sync: disable to prevent data egress -->
+				  <key>SyncDisabled</key>
+				  <true/>
+				  <!-- Profiles: reduce bypass via extra profiles -->
+				  <key>BrowserAddPersonEnabled</key>
+				  <false/>
+				  <!-- Optional: suppress the profile picker UX -->
+				  <key>ProfilePickerOnStartupAvailability</key>
+				  <integer>0</integer>
+				</dict>				 
+                </dict>
+              </dict>
+            </dict>
+          </array>
+        </dict>
+      </dict>
+    </dict>
+  </array>
+
+</dict>
+</plist>

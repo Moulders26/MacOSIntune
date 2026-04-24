@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+  <key>PayloadType</key>
+  <string>Configuration</string>
+
+  <key>PayloadVersion</key>
+  <integer>1</integer>
+
+  <key>PayloadIdentifier</key>
+  <string>com.blme.chrome.updates</string>
+
+  <key>PayloadUUID</key>
+  <string>7D9C6A0D-8A6C-4B67-9D39-37E8D94E23C1</string>
+
+  <key>PayloadDisplayName</key>
+  <string>Mac - BLME - Custom - Google Chrome - D - Updates - v0.1</string>
+
+  <key>PayloadScope</key>
+  <string>System</string>
+
+  <key>PayloadContent</key>
+  <array>
+    <dict>
+      <key>PayloadType</key>
+      <string>com.apple.ManagedClient.preferences</string>
+
+      <key>PayloadVersion</key>
+      <integer>1</integer>
+
+      <key>PayloadIdentifier</key>
+      <string>com.blme.chrome.updates.prefs</string>
+
+      <key>PayloadUUID</key>
+      <string>91F0C5C3-4A41-4C51-BE3B-9A5F4A8C22E9</string>
+
+      <key>PayloadContent</key>
+      <dict>
+        <key>com.google.Chrome</key>
+        <dict>
+          <key>Forced</key>
+          <array>
+            <dict>
+              <key>mcx_preference_settings</key>
+              <dict>
+                <key>AutoUpdateCheckPeriodMinutes</key>
+                <integer>240</integer>
+
+                <key>UpdatesSuppressedStartHour</key>
+                <integer>22</integer>
+
+                <key>UpdatesSuppressedDurationMin</key>
+                <integer>480</integer>
+              </dict>
+            </dict>
+          </array>
+        </dict>
+      </dict>
+    </dict>
+  </array>
+
+</dict>
+</plist>

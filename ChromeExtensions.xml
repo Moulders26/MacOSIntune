@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+  <key>PayloadType</key>
+  <string>Configuration</string>
+
+  <key>PayloadVersion</key>
+  <integer>1</integer>
+
+  <key>PayloadIdentifier</key>
+  <string>com.blme.chrome.extensions</string>
+
+  <key>PayloadUUID</key>
+  <string>7D9C6A0D-8A6C-4B67-9D78-37E8D94E23C1</string>
+
+  <key>PayloadDisplayName</key>
+  <string>Mac - BLME - Custom - Google Chrome - D - Extensions - v0.1</string>
+
+  <key>PayloadScope</key>
+  <string>System</string>
+
+  <key>PayloadContent</key>
+  <array>
+    <dict>
+      <key>PayloadType</key>
+      <string>com.apple.ManagedClient.preferences</string>
+
+      <key>PayloadVersion</key>
+      <integer>1</integer>
+
+      <key>PayloadIdentifier</key>
+      <string>com.blme.chrome.extensions.prefs</string>
+
+      <key>PayloadUUID</key>
+      <string>91F0C5C3-4A41-4C51-BE3B-9A5F4A8C77E9</string>
+
+      <key>PayloadContent</key>
+      <dict>
+        <key>com.google.Chrome</key>
+        <dict>
+          <key>Forced</key>
+          <array>
+            <dict>
+              <key>mcx_preference_settings</key>
+              <dict>
+
+                <key>ExtensionSettings</key>
+                <dict>
+                  <!-- Default: block all extensions -->
+                  <key>*</key>
+                  <dict>
+                    <key>installation_mode</key>
+                    <string>blocked</string>
+                    <key>blocked_install_message</key>
+                    <string>Extensions are restricted by BLME policy. Raise a request with IT Security for approval.</string>
+                  </dict>
+
+                  <!-- 1Password (force install) -->
+                  <key>aeblfdkhhhdcdjpifhhbdiojplfjncoa</key>
+                  <dict>
+                    <key>installation_mode</key>
+                    <string>force_installed</string>
+                    <key>update_url</key>
+                    <string>https://clients2.google.com/service/update2/crx</string>
+                  </dict>
+
+                  <!-- SAML Tracer (allowed) -->
+                  <key>boffpaecgbbojpkboijhbmhecoefdehi</key>
+                  <dict>
+                    <key>installation_mode</key>
+                    <string>allowed</string>
+                  </dict>
+
+                  <!-- SharePoint diagnostics (allowed) -->
+                  <key>inahogkhlkbkjkkaleonemeijihmfagi</key>
+                  <dict>
+                    <key>installation_mode</key>
+                    <string>allowed</string>
+                  </dict>
+
+                  <!-- Adobe Acrobat (allowed) -->
+                  <key>efaidnbmnnnibpcajpcglclefindmkaj</key>
+                  <dict>
+                    <key>installation_mode</key>
+                    <string>allowed</string>
+                  </dict>
+
+                  <!-- ME (allowed) -->
+                  <key>mhkgegcmcapcgmnnloigolapjkajgfmd</key>
+                  <dict>
+                    <key>installation_mode</key>
+                    <string>allowed</string>
+                  </dict>
+
+                  <!-- Salesforce (allowed) -->
+                  <key>hpijlohoihegkfehhibggnkbjhoemldh</key>
+                  <dict>
+                    <key>installation_mode</key>
+                    <string>allowed</string>
+                  </dict>
+
+                  <!-- SSO (allowed) -->
+                  <key>ppnbnpeolgkicgegkbkbjmhlideopiji</key>
+                  <dict>
+                    <key>installation_mode</key>
+                    <string>allowed</string>
+                  </dict>
+
+                </dict>
+
+              </dict>
+            </dict>
+          </array>
+        </dict>
+      </dict>
+    </dict>
+  </array>
+
+</dict>
+</plist>
